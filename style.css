@@ -102,14 +102,13 @@
     
     }
 
-h2{
-    max-width: calc(49vw + 144px); /*770-328*/
-    height: calc(6.1vw + 57px); /*135-80*/
+ h2{
+    
     font-size: calc(2.8vw + 25px); /*60-35*/
     font-weight: 500;
     line-height: calc(3.3vw + 27.5px); /*70-40*/
     font-family: 'TT Hoves', sans-serif;
-    margin-bottom: calc(2.8vw + 4.6px); /*40-15*/ 
+    margin-bottom: calc(7.7vw + 9px); /**/ 
     text-transform: uppercase;
    
 }
@@ -121,7 +120,7 @@ h2{
     flex-wrap: wrap;
 }
 
-h3{
+.info2 h3{
     width: calc(11.6vw + 286px); /*435-330*/
     height: calc(3.3vw + 37.5px); /*330-50*/
     font-size: calc(1.3vw + 13px); /*30-18*/
@@ -156,3 +155,30 @@ h3{
 #div2{
     margin-top: 70px;
 }
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 120px;
+    margin-bottom: calc(2.4vw + 21px);
+}
+
+.contentcad{
+    width: calc(8vw + 298px);
+}
+
+.contentcad h3{
+    
+    font-weight: 600;
+    font-size: calc(1vw + 14.2px);
+    margin-bottom: calc(1.1vw + 9px);
+    text-transform: uppercase;
+    line-height: 140%;
+}
+ .contentcad p{
+    font-size: calc(1vw + 14.2px);
+
+ }
+
+ 
