@@ -108,7 +108,7 @@
     font-weight: 500;
     line-height: calc(3.3vw + 27.5px); /*70-40*/
     font-family: 'TT Hoves', sans-serif;
-    margin-bottom: calc(7.7vw + 9px); /**/ 
+    margin-bottom: calc(2.8vw + 4.6px); /**/ 
     text-transform: uppercase;
    
 }
@@ -181,4 +181,127 @@
 
  }
 
- 
+
+ .border
+{
+ border: 2px solid black;
+ padding: calc(4.4vw + 23px) calc(3.8vw + 10px) calc(1.3vw + 18px);
+ position: relative;
+}
+
+.programcourse{
+    margin-bottom: calc(1.8vw + 17.3px);
+}
+
+.border ul li{
+    border-bottom: 2px solid black;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    font-size: calc(0.6vw + 14px); /*21-16*/
+}
+.border ul li:last-child{
+    margin-bottom: 0;
+}
+.border .primary{
+    display: block;
+    margin: 0 auto;
+}
+ .primary.desk, .primary.mob{
+    display: block;
+    margin: 0 auto;
+    margin-top: 34px;
+ }
+
+ .corner{
+    position: absolute;
+    right: -8px;
+    top: -3px;
+    width: 120px;
+    height: 120px;
+ }
+
+ .primary.mob{
+    display: none;
+ }
+
+ @media (max-width: 875px){
+    .primary.desk{
+        display: none;
+            }
+            .primary.mob{
+                display: block;
+            }
+ }
+
+
+ .pg8 h2{
+    width: calc(44.4vw + 161px); /*328*/
+    height: calc(4.8vw + 143px); /*160*/
+    margin-bottom: 0;
+ }
+ .pg8 p{
+    width: calc(60.6vw + 100px); /*328*/
+    height: calc(-0.9vw + 163px); /*160*/
+    font-weight: 400;
+    font-size: calc(1vw + 14px); /*18*/
+    line-height: calc(1.4vw + 19.5px); /*25*/
+    margin-bottom: calc(1.8vw + 13.3px); /*20*/
+    margin-top: calc(2.2vw + 11.6px); /*20*/
+     }
+
+     .pg8 img{
+        width: calc(81.5vw + 21.5px);
+        height: calc(23.7vw + 7px); /*96*/
+     }
+
+
+     .pg9 div{
+        display: flex;
+        flex-wrap: ;
+        align-items: center;
+        
+     }
+
+     pg9 h2{
+        margin-bottom: 0;
+        width: calc(55vw + 120px); /*328*/
+        height: calc(-1.3vw + 85px); /*80*/
+     }
+     .pg9 img{
+        width: calc(19vw + 334px);/*406*/
+        height: calc(11.7vw + 204px);/*248*/
+        
+     }
+
+     .pg9 div div{
+        display: block;
+        width: calc(21vw + 248px); /*328*/
+        height: calc(16vw + 20px); /*80*/
+     } 
+
+     .p1{
+        width: calc(21vw + 248px); /*328*/
+        height: calc(0.4vw +23px); /*25*/
+     }
+
+     .p2{
+        width: calc(16.6vw + 265.6px); /*328*/
+        height: calc(0.9vw +46.6px); /*50*/
+        margin-top: 25px;
+        margin-bottom: 25px;
+     }
+
+     .p3{
+        width: calc(21vw + 248px);
+        height: calc(-1.4vw + 105px); /*100*/
+     }
+
+     .p1.p2.p3{
+        line-height: calc(0.6vw + 23px); /*25*/
+        font-size: calc(0.3vw + 16.7px); /*18*/
+     }
+     @media (max-width: 768px) {
+        .pg9 div {
+            display: block; /* Элементы будут располагаться вертикально */
+            align-items: flex-start; /* Выравнивание по левому краю */
+        }
