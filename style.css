@@ -355,32 +355,29 @@ pg9 h2 {
     display: flex;
     justify-content: center;
   }
-  .legendInfo{
+  .legendInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .legendCards {
-    
     grid-template-areas:
       "smile keyboard"
       "cup bag ";
   }
 }
 
-
-
 .diplomstart {
-  
   display: grid;
   border: 5px solid black;
   grid-template-rows: auto auto;
   grid-template-columns: calc(11.3vw + 285px) auto; /*430-328*/
   gap: 20px 20px; /*20*/
-  align-items: start; 
-  justify-items: start; 
-  grid-template-areas: "img title"
-                      "img desk";
+  align-items: start;
+  justify-items: start;
+  grid-template-areas:
+    "img title"
+    "img desk";
 }
 
 .diplomimg {
@@ -413,17 +410,12 @@ pg9 h2 {
   .diplomstart {
     grid-template-rows: auto 230px auto; /* Три строки */
     grid-template-columns: 1fr; /* Один столбец */
-    grid-template-areas: 
+    grid-template-areas:
       "title"
       "img"
       "desk";
   }
 }
-
-
-
-
-
 
 .saletimer {
   background-color: #6e3aba;
@@ -456,5 +448,39 @@ pg9 h2 {
 }
 
 .saleTimerCard span {
+  font-size: calc(1.9vw + 3px);
+}
+
+.happytimer {
+  background-color: #6e3aba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(4.4vw + 23px) 0 calc(4.4vw + 23px);
+  gap: calc(4vw + 4.6px);
+}
+
+.happytitle {
+  font-size: calc(2vw + 26px);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.happyTimerContainer {
+  display: flex;
+  gap: 0 calc(6vw + 10px);
+}
+
+.happyTimerCard {
+  text-align: center;
+}
+
+.happyTimerCard h4 {
+  font-family: "Chava";
+  font-size: calc(12.6vw + 12.6px);
+}
+
+.happyTimerCard span {
   font-size: calc(1.9vw + 3px);
 }
