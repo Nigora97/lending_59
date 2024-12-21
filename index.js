@@ -10,7 +10,7 @@ function saleDate() {
   const finishDate = new Date(2024, 11, 31);
   const currentDate = new Date();
   const date = finishDate - currentDate;
-  console.log(Math.trunc);
+  
   day.innerHTML = correctDate(Math.trunc(date / (1000 * 60 * 60 * 24)));
   hour.innerHTML = correctDate(
     Math.trunc((date % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
@@ -38,7 +38,7 @@ function happyDate() {
   const finishDate = new Date(2024, 11, 31);
   const currentDate = new Date();
   const date = finishDate - currentDate;
-  console.log(Math.trunc);
+  
   day.innerHTML = happycorrectDate(Math.trunc(date / (1000 * 60 * 60 * 24)));
   hour.innerHTML = happycorrectDate(
     Math.trunc((date % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
@@ -52,3 +52,6 @@ happyDate();
 setInterval(function () {
   happyDate();
 }, 1000);
+
+
+

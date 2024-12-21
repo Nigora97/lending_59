@@ -89,10 +89,6 @@ h1 {
   cursor: pointer;
 }
 
-.section2 {
-  padding: 0 calc(10.6vw - 15.8px) calc(11.1vw + 18.4px);
-}
-
 .photo {
   width: 200px; /*250-200*/
 }
@@ -108,7 +104,7 @@ h2 {
 
 .infoWrapper2 {
   display: flex;
-  gap: 70px; /*70-13*/
+  gap: calc(4.4vw + 13px); /*70-30*/
   flex-wrap: wrap;
 }
 
@@ -127,7 +123,7 @@ h2 {
 .info2 {
   width: calc(13.5vw + 277px); /*450-328*/
   height: calc(11.3vw + 333px); /*477-375*/
-  margin-bottom: calc(1.7vw + 34px); /*55-40*/
+  margin-bottom: calc(4.4vw - 1.6px); /*55-15*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -201,21 +197,12 @@ h2 {
   position: absolute;
   right: -8px;
   top: -3px;
-  width: 120px;
-  height: 120px;
+  width: calc(6.6vw + 35px);
+  height: calc(6.6vw + 35px);
 }
 
 .primary.mob {
   display: none;
-}
-
-@media (max-width: 875px) {
-  .primary.desk {
-    display: none;
-  }
-  .primary.mob {
-    display: block;
-  }
 }
 
 .pg8 h2 {
@@ -242,10 +229,10 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-items: center;
 }
 
-pg9 h2 {
-  margin-bottom: 0;
+.pg9 h2 {
   width: calc(55vw + 120px); /*328*/
   height: calc(-1.3vw + 85px); /*80*/
 }
@@ -280,12 +267,6 @@ pg9 h2 {
 .p1.p2.p3 {
   line-height: calc(0.6vw + 23px); /*25*/
   font-size: calc(0.3vw + 16.7px); /*18*/
-}
-@media (max-width: 768px) {
-  .pg9 div {
-    display: block; /* Элементы будут располагаться вертикально */
-    align-items: flex-start; /* Выравнивание по левому краю */
-  }
 }
 
 .legendtext {
@@ -350,26 +331,8 @@ pg9 h2 {
   font-size: calc(0.6vw + 14px);
 }
 
-@media (max-width: 1280px) {
-  .legend {
-    display: flex;
-    justify-content: center;
-  }
-  .legendInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .legendCards {
-    grid-template-areas:
-      "smile keyboard"
-      "cup bag ";
-  }
-}
-
 .diplomstart {
   display: grid;
-  border: 5px solid black;
   grid-template-rows: auto auto;
   grid-template-columns: calc(11.3vw + 285px) auto; /*430-328*/
   gap: 20px 20px; /*20*/
@@ -378,11 +341,12 @@ pg9 h2 {
   grid-template-areas:
     "img title"
     "img desk";
+    outline: 2px solid blue;
 }
 
 .diplomimg {
   grid-area: img;
-  grid-row: 1 / span 2; /* Растянуть на две строки */
+  grid-row: 1/3;
 }
 
 .diplomimg img {
@@ -393,28 +357,23 @@ pg9 h2 {
 
 .diplomtitle {
   width: calc(35.6vw + 194px); /*650-328*/
+  grid-area: title;
+}
+
+.diplomtitle h2 {
   font-size: calc(2.7vw + 24px); /*58-34*/
   line-height: calc(3.1vw + 28px); /*68-40*/
-  grid-area: title;
   margin-bottom: 0;
 }
 
 .diplomdesc {
   width: calc(20.6vw + 250px); /*514-328*/
-  font-size: calc(1vw + 14px); /*27-18*/
-  line-height: calc(1.4vw + 19px); /*38-25*/
-  grid-area: desk;
+    grid-area: desk;
 }
 
-@media (max-width: 768px) {
-  .diplomstart {
-    grid-template-rows: auto 230px auto; /* Три строки */
-    grid-template-columns: 1fr; /* Один столбец */
-    grid-template-areas:
-      "title"
-      "img"
-      "desk";
-  }
+.diplomdesc p{
+  font-size: calc(1vw + 14px); /*27-18*/
+  line-height: calc(1.4vw + 19px); /*38-25*/
 }
 
 .saletimer {
@@ -483,4 +442,87 @@ pg9 h2 {
 
 .happyTimerCard span {
   font-size: calc(1.9vw + 3px);
+}
+
+.feedbackcard {
+  padding: 20px 50px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedbackcard img:nth-child(1) {
+  margin-bottom: 12px;
+}
+
+.feedbackcard p {
+  font-size: 21px;
+}
+
+.feedbackuser {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.feedbackuser img {
+  border-radius: 50%;
+}
+
+.feedbackuser h3 {
+  font-size: 21px;
+  font-weight: 400;
+  width: 170px;
+}
+
+@media (max-width: 1280px) {
+  .legend {
+    display: flex;
+    justify-content: center;
+  }
+  .legendInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .legendCards {
+    grid-template-areas:
+      "smile keyboard"
+      "cup bag ";
+  }
+}
+
+@media (max-width: 875px) {
+  .primary.desk {
+    display: none;
+  }
+  .primary.mob {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .diplomstart {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "img"
+      "desk";
+    }
+
+  .diplomimg img {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+      }
+  
+
+  .pg9 div {
+    display: block; /* Элементы будут располагаться вертикально */
+    align-items: flex-start; /* Выравнивание по левому краю */
+  }
 }
