@@ -224,7 +224,9 @@ h2 {
   width: calc(81.5vw + 21.5px);
   height: calc(23.7vw + 7px); /*96*/
 }
-
+.pg9{
+  height: calc(-16.4vw + 661px);
+}
 .pg9 div {
   display: flex;
   flex-wrap: wrap;
@@ -242,7 +244,6 @@ h2 {
 }
 
 .pg9 div div {
-  display: block;
   width: calc(21vw + 248px); /*328*/
   height: calc(16vw + 20px); /*80*/
 }
@@ -254,7 +255,7 @@ h2 {
 
 .p2 {
   width: calc(16.6vw + 265.6px); /*328*/
-  height: calc(0.9vw +46.6px); /*50*/
+  height: calc(0.9vw + 46.6px); /*50*/
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -270,8 +271,13 @@ h2 {
 }
 
 
+.b4 {
+  height: 100%;
+}
+
 
 .legendtext {
+  margin-top: 50px;
   margin-bottom: calc(5.5vw + 19px);
 }
 
@@ -406,7 +412,7 @@ h2 {
 
 .saleTimerCard h4 {
   font-family: "Chava";
-  font-size: calc(12.6vw + 12.6px);
+  font-size: calc(13.7vw - 1.3px);
 }
 
 .saleTimerCard span {
@@ -440,7 +446,7 @@ h2 {
 
 .happyTimerCard h4 {
   font-family: "Chava";
-  font-size: calc(12.6vw + 12.6px);
+  font-size: calc(13.7vw - 1.3px);
 }
 
 .happyTimerCard span {
@@ -505,6 +511,125 @@ height: 480px;
 }
 
 
+/*footer start*/
+footer{
+padding: calc(2.2vw + 52px) calc(10.6vw - 15.8px);
+background-color: black;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.footerleft{
+  width: 50%;
+}
+
+.footerleft h2{
+color: white;
+width: calc(10.5vw + 289.5px);
+}
+
+.infoleft{
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+.infoleft div{
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.infoleft div p{
+color: white;
+font-size: calc(1vw + 14px);
+}
+
+.footerright{
+  width: 50%;
+}
+
+.footerform{
+  background-color:#ffffff;
+  border-radius: 12px;
+  padding: 60px calc(3.3vw + 17.5px);
+  width: calc(16.4vw + 265px);
+  text-align: center;
+  position: relative;
+}
+
+.footerform h3{
+font-size: calc(0.4vw + 24px);
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+.pdate{
+  margin-top: 10px;
+  font-size: calc(0.6vw + 14px);
+  margin-bottom: 30px;
+  color:gray;
+  line-height: 21.2px;
+  text-align: center;
+}
+
+.pnumber{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 21.2px;
+  color:gray;
+}
+
+.footerform input{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #A1A1A16B;
+  padding-bottom: 10px;
+  margin-bottom: 23px;
+  outline: none;
+  color: #0000002B;
+}
+
+.footerform .primary{
+  margin-bottom: 40px;
+}
+
+.footerform span{
+
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: bold;
+  line-height: 21.2px;
+  text-align: center;
+  color:gray;
+  
+}
+
+.footerform p:nth-child(5){
+  font-size: 18px;
+  color: grey;
+}
+
+.sale10{
+  width: calc(6.1vw + 82px);
+  height: calc(6.1vw + 82px);
+  background-color: #6E3ABA;
+  font-size: calc(2.5vw + 30px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: white; 
+  left: -80px;
+  top: -80px
+}
+/*footer end*/
+
 @media (max-width: 1280px) {
   .legend {
     display: flex;
@@ -522,6 +647,14 @@ height: 480px;
   }
 }
 
+@media (max-width: 975px) {
+  footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 88px 0;
+  }
+}
+
 @media (max-width: 875px) {
   .primary.desk {
     display: none;
@@ -529,6 +662,24 @@ height: 480px;
   .primary.mob {
     display: block;
   }
+  .footerform .primary {
+    display: block;  
+    text-align: center; 
+    width: 267px;
+    height: 61px;
+  }
+  .sale10{
+    right: -20px;
+    left: auto;
+    top: -50px;
+  }
+  .footerleft {
+    width: 100%; /* Занимает всю ширину */
+    text-align: left;}
+
+    .footerform input[placeholder="Фамилия"] {
+      display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -553,6 +704,8 @@ height: 480px;
     display: block; /* Элементы будут располагаться вертикально */
     align-items: flex-start; /* Выравнивание по левому краю */
   }
+
+  
 
   .saleTimerContainer{
     gap: 5px;
