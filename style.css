@@ -224,7 +224,7 @@ h2 {
   width: calc(81.5vw + 21.5px);
   height: calc(23.7vw + 7px); /*96*/
 }
-.pg9{
+.pg9 {
   height: calc(-16.4vw + 661px);
 }
 .pg9 div {
@@ -270,11 +270,9 @@ h2 {
   font-size: calc(0.3vw + 16.7px); /*18*/
 }
 
-
 .b4 {
   height: 100%;
 }
-
 
 .legendtext {
   margin-top: 50px;
@@ -292,7 +290,7 @@ h2 {
   flex-basis: 400px;
   flex-grow: 1;
 }
-.legend img{
+.legend img {
   width: 100%;
 }
 
@@ -377,10 +375,10 @@ h2 {
 
 .diplomdesc {
   width: calc(20.6vw + 250px); /*514-328*/
-    grid-area: desk;
+  grid-area: desk;
 }
 
-.diplomdesc p{
+.diplomdesc p {
   font-size: calc(1vw + 14px); /*27-18*/
   line-height: calc(1.4vw + 19px); /*38-25*/
 }
@@ -454,8 +452,9 @@ h2 {
 }
 
 .feedbackcard {
-  padding: 20px 50px;
-  background-color: white;
+  height: 484px;
+  padding: 40px 20px;
+  background-color: #f0f7fd;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -486,72 +485,108 @@ h2 {
   width: 170px;
 }
 
-.choosetitle{
+.choosetitle {
   margin-bottom: 0;
 }
 
 .splide__slide:last-child {
-  margin-right: 0;}
+  margin-right: 0;
+}
 
-.chooseprise{
+.chooseprise {
   margin-top: 14px;
   margin-bottom: 24px;
   width: calc(46.5vw + 153px); /*748-328*/
   font-size: 27px;
 }
 
-.choosecard img{
-
-width: 480px;
-height: 480px;
+.choosecard img {
+  width: 480px;
+  height: 480px;
 }
 
-.splide__slide.choosecard{
+.splide__slide.choosecard {
   margin-right: calc(2.2vw + 1.6px);
 }
 
-
-/*footer start*/
-footer{
-padding: calc(2.2vw + 52px) calc(10.6vw - 15.8px);
-background-color: black;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+.aboutus {
+  display: flex;
 }
 
-.footerleft{
+.leftside {
+  width: 50%;
+}
+.leftside img {
+  width: 110px;
+  height: 110px;
+  margin-bottom: calc(2.2vw + 11.7px); /*40-20*/
+}
+.leftside p {
+  width: calc(10.8vw + 287px); /*426-328*/
+  font-size: calc(0.6vw + 20px); /*27-22*/
+  font-weight: 600;
+  line-height: calc(0.8vw + 28px);
+  text-transform: uppercase;
+}
+
+.rightside {
+  width: 50%;
+}
+.rightside div p {
+  font-size: calc(2.7vw + 24px); /*58-34*/
+  line-height: calc(3.1vw + 28px);
+  font-weight: 700;
+}
+.rightside div span {
+  font-size: calc(0.6vw + 14px);
+  line-height: calc(0.8vw + 19.6px);
+  font-weight: 400;
+}
+.firstright {
+  margin-bottom: calc(1.1vw + 25.8px);
+}
+
+/*footer start*/
+footer {
+  padding: calc(2.2vw + 52px) calc(10.6vw - 15.8px);
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerleft {
   width: 50%;
 }
 
-.footerleft h2{
-color: white;
-width: calc(10.5vw + 289.5px);
+.footerleft h2 {
+  color: white;
+  width: calc(10.5vw + 289.5px);
 }
 
-.infoleft{
+.infoleft {
   display: flex;
   flex-direction: column;
   gap: 24px 0;
 }
 
-.infoleft div{
+.infoleft div {
   display: flex;
   align-items: center;
   gap: 0 20px;
 }
 
-.infoleft div p{
-color: white;
-font-size: calc(1vw + 14px);
+.infoleft div p {
+  color: white;
+  font-size: calc(1vw + 14px);
 }
 
-.footerright{
+.footerright {
   width: 50%;
 }
 
-.footerform{
-  background-color:#ffffff;
+.footerform {
+  background-color: #ffffff;
   border-radius: 12px;
   padding: 60px calc(3.3vw + 17.5px);
   width: calc(16.4vw + 265px);
@@ -559,64 +594,62 @@ font-size: calc(1vw + 14px);
   position: relative;
 }
 
-.footerform h3{
-font-size: calc(0.4vw + 24px);
-text-transform: uppercase;
-margin-bottom: 10px;
+.footerform h3 {
+  font-size: calc(0.4vw + 24px);
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.pdate{
+.pdate {
   margin-top: 10px;
   font-size: calc(0.6vw + 14px);
   margin-bottom: 30px;
-  color:gray;
+  color: gray;
   line-height: 21.2px;
   text-align: center;
 }
 
-.pnumber{
+.pnumber {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 21.2px;
-  color:gray;
+  color: gray;
 }
 
-.footerform input{
+.footerform input {
   display: block;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #A1A1A16B;
+  border-bottom: 1px solid #a1a1a16b;
   padding-bottom: 10px;
   margin-bottom: 23px;
   outline: none;
-  color: #0000002B;
+  color: #0000002b;
 }
 
-.footerform .primary{
+.footerform .primary {
   margin-bottom: 40px;
 }
 
-.footerform span{
-
+.footerform span {
   font-size: 18px;
   font-weight: 400;
   font-weight: bold;
   line-height: 21.2px;
   text-align: center;
-  color:gray;
-  
+  color: gray;
 }
 
-.footerform p:nth-child(5){
+.footerform p:nth-child(5) {
   font-size: 18px;
   color: grey;
 }
 
-.sale10{
+.sale10 {
   width: calc(6.1vw + 82px);
   height: calc(6.1vw + 82px);
-  background-color: #6E3ABA;
+  background-color: #6e3aba;
   font-size: calc(2.5vw + 30px);
   position: absolute;
   display: flex;
@@ -624,9 +657,9 @@ margin-bottom: 10px;
   align-items: center;
   border-radius: 50%;
   font-weight: 700;
-  color: white; 
+  color: white;
   left: -80px;
-  top: -80px
+  top: -80px;
 }
 /*footer end*/
 
@@ -648,7 +681,7 @@ margin-bottom: 10px;
 }
 
 @media (max-width: 975px) {
-  footer{
+  footer {
     flex-direction: column;
     align-items: center;
     gap: 88px 0;
@@ -663,23 +696,28 @@ margin-bottom: 10px;
     display: block;
   }
   .footerform .primary {
-    display: block;  
-    text-align: center; 
+    display: block;
+    text-align: center;
     width: 267px;
     height: 61px;
   }
-  .sale10{
+  .sale10 {
     right: -20px;
-    left: auto;
+    left: 235px;
     top: -50px;
   }
   .footerleft {
     width: 100%; /* Занимает всю ширину */
-    text-align: left;}
+    text-align: left;
+  }
 
-    .footerform input[placeholder="Фамилия"] {
-      display: none;
-    }
+  .footerform input[placeholder="Фамилия"] {
+    display: none;
+  }
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {
@@ -691,36 +729,43 @@ margin-bottom: 10px;
       "title"
       "img"
       "desk";
-    }
+  }
 
   .diplomimg img {
-        margin-top: 0;
-        width: 100%;
-        height: auto;
-      }
-  
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+  }
 
   .pg9 div {
     display: block; /* Элементы будут располагаться вертикально */
     align-items: flex-start; /* Выравнивание по левому краю */
   }
-
-  
-
-  .saleTimerContainer{
+  .saleTimerContainer {
     gap: 5px;
   }
-  .happyTimerContainer{
+  .happyTimerContainer {
     gap: 5px;
   }
 
-  .pg9 img{
+  .pg9 img {
     width: 100%;
   }
 
-.choosecard img{
-  width: 100%;
-  height: auto;
-}
+  .choosecard img {
+    width: 100%;
+    height: auto;
+  }
 
+  .aboutus {
+    flex-direction: column; /* Элементы идут вертикально */
+    gap: 40px;
+  }
+  .Digital10 {
+    width: 328px;
+  }
+  .leftside p {
+    font-weight: 500;
+    text-transform: none;
+  }
 }
